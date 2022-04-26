@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @hybrid %>
+
+<div>
+  <%= link_to "Edit this hybrid", edit_hybrid_path(@hybrid) %> |
+  <%= link_to "Back to hybrids", hybrids_path %>
+
+  <%= button_to "Destroy this hybrid", @hybrid, method: :delete %>
+</div>

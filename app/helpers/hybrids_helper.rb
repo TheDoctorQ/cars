@@ -1,0 +1,2 @@
+module HybridsHelper
+end

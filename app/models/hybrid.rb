@@ -1,0 +1,2 @@
+class Hybrid < ApplicationRecord
+end

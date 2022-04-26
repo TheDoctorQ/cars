@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Hybrids</h1>
+
+<div id="hybrids">
+  <% @hybrids.each do |hybrid| %>
+    <%= render hybrid %>
+    <p>
+      <%= link_to "Show this hybrid", hybrid %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New hybrid", new_hybrid_path %>
