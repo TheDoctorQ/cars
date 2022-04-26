@@ -1,0 +1,2 @@
+class Electric < ApplicationRecord
+end
