@@ -10,4 +10,19 @@ class ElectricsController < ApplicationController
     render "electrics/show"
   end
 
+  def new
+    render "electrics/new" 
+  end
+
+  def create
+    electric = Electric.new(
+      name: params[:name],
+      color: params[:color],
+      manufacturer: params[:manufacturer],
+      year: params[:year],
+    )
+    electric.save
+    redirect_to "/electrics/#{electric.id}"
+  end
+
 end

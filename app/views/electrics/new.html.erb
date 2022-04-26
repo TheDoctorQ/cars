@@ -1,0 +1,11 @@
+<p>O'Doyle, I've got a feeling your whole family's going down.</p>
+
+<form action="/electrics" method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<p>Name: <input type="text" name="name"></p>
+<p>Color: <input type="text" name="color"></p>
+<p>Manufacturer: <input type="text" name="manufacturer"></p>
+<p>Year: <input type="text" name="year"></p>
+
+<input type="submit" value="Make a new electric car!">
+</form>
