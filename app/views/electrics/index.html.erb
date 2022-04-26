@@ -1,0 +1,9 @@
+<p>Mr. Madison, what you've just said is one of the most insanely idiotic things I have ever heard. At no point in your rambling, incoherent response were you even close to anything that could be considered a rational thought. Everyone in this room is now dumber for having listened to it. I award you no points, and my god have mercy on your soul.</p>
+
+<% @electrics.each do |electric| %>
+  <p> <%= electric.name %> </p>
+  <p> <%= electric.color %> </p>
+  <p> <%= electric.manufacturer %> </p>
+  <p> <%= electric.year %> </p>
+  <hr>
+  <% end %>
